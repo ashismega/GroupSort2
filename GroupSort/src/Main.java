@@ -8,5 +8,7 @@
  * @author 073903999
  */
 public class Main {
-    
+    public void bubble(){
+        //hahahahahah bubble
+    }
 }
