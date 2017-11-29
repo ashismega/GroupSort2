@@ -10,7 +10,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Comparable arry[] = {3, 2, 5, 6, 4, 7, 4, 6};
+        Comparable arry[] = {3, 2, 5, 6,4,3,6,5,7,9,7,6,32,2,3,4,1,31,3,434,1, 4, 7, 4, 6};
         bubble(arry);
         for (int i = 0; i < arry.length; i++) {
             System.out.println(arry[i]);
