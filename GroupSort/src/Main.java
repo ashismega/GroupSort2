@@ -37,4 +37,20 @@ public class Main {
         } while (swapped);
 
     }
+    public void selection(Comparable[] array){
+        Comparable lowest = 0;
+        for (int i = 0; i<array.length;i++){
+             
+        }
+    }
+    public int indexOfSmallest (Comparable[] array, int low, int high){
+        int lowestIndex = low;
+        for (int j = 0; j<array.length;j++){
+            if (array[j].compareTo(array[lowestIndex])<0){
+                lowestIndex = j;
+                break;
+            }
+        }
+        return lowestIndex;
+    }
 }
