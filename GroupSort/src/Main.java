@@ -24,4 +24,8 @@ public class Main {
         }while(swapped);
         }
     }
+    public void insertion(){
+        
+    }
+}
 
