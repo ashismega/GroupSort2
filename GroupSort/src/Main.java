@@ -11,4 +11,7 @@ public class Main {
     public void bubble(){
         //hahahahahah bubble
     }
+    public void insertion(){
+        
+    }
 }
