@@ -8,24 +8,33 @@
  * @author 073903999
  */
 public class Main {
-    public void bubble(Comparable [] a){
-        boolean swapped;
-        Comparable temp;
-        do{
-            swapped=false;
-            for(int i = 0; i<=a.length-1;i++){
-                if(a[i].compareTo(a[i+1])>0){
-                    temp=a[i];
-                    a[i]=a[i+1];
-                    a[i+1]=temp;
-                    swapped=true;
-                }
-            }
-        }while(swapped);
+
+    public static void main(String[] args) {
+        Comparable arry[] = {3, 2, 5, 6, 4, 7, 4, 6};
+        bubble(arry);
+        for (int i = 0; i < arry.length; i++) {
+            System.out.println(arry[i]);
         }
     }
-    public void insertion(){
-        
+
+    public static void bubble(Comparable[] a) {
+        boolean swapped;
+        Comparable temp;
+        do {
+            swapped = false;
+
+            for (int i = 0; i < a.length; i++) {
+                try {
+                    if (a[i].compareTo(a[i + 1]) > 0) {
+                        temp = a[i];
+                        a[i] = a[i + 1];
+                        a[i + 1] = temp;
+                        swapped = true;
+                    }
+                } catch (ArrayIndexOutOfBoundsException ex) {
+                }
+            }
+        } while (swapped);
+
     }
 }
-
